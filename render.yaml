@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: benilab
+    env: static
+    buildCommand: npm run build
+    publishPath: ./dist # ou build selon votre config
+    routes:
+      - src: /*
+        dest: /index.html
