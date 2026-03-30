@@ -903,6 +903,8 @@ const FormationsPage = () => {
         sub={'Contactez-nous pour une formation sur mesure adaptée à vos équipes et vos besoins spécifiques.'}
         btn1Text={"Formation sur mesure"}
         btn2Text={"Demander un devis"}
+            btn1link={'/formations'}
+          btn2link={'/devis'}
       />
 
       <style jsx>{`

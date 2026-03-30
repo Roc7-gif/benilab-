@@ -61,6 +61,8 @@ const ServicePage = () => {
         }
         btn1Text={"Obtenir un Devis Gratuit"}
         btn2Text={"Nous Appeler"}
+            btn1link={'/devis'}
+          btn2link={'/contact'}
       />
     </>
   );

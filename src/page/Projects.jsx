@@ -543,6 +543,8 @@ const ProjetsPage = () => {
         }
         btn1Text={"Rejoindre le Startup Studio"}
         btn2Text={"Voir nos pôles d'expertise"}
+        btn1link={"/connexion"}
+        btn2link={"/poles"}
       />
       <style jsx>{`
         .scrollbar-hide::-webkit-scrollbar {

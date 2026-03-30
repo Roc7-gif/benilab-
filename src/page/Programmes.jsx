@@ -581,6 +581,8 @@ const ProgrammesPage = () => {
           }
           btn1Text={"S'inscrire maintenant"}
           btn2Text={"Voir les formations"}
+          btn1link={'/connexion'}
+          btn2link={'/formations'}
         />
         {/* CSS pour line-clamp */}
         <style jsx>{`

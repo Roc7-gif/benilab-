@@ -1,4 +1,6 @@
-const CTA = ({headTitle,Title,sub ,btn1Text,btn2Text  }) => {
+import { Link } from "react-router-dom";
+
+const CTA = ({headTitle,Title,sub ,btn1Text,btn2Text , btn1link , btn2link }) => {
   return (<>
     <section className="py-20 bg-linear-to-r from-[#1C74A0] to-[#1D5672]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -30,8 +32,8 @@ const CTA = ({headTitle,Title,sub ,btn1Text,btn2Text  }) => {
           
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="/devis"
+          <Link
+            to={btn1link||"/devis"}
             className="inline-flex items-center justify-center whitespace-nowrap transition-colors h-11 text-base bg-white text-[#2D9BD2] hover:bg-white/90 font-bold px-8 py-3 rounded-xl shadow-lg"
           >
             <svg
@@ -48,15 +50,15 @@ const CTA = ({headTitle,Title,sub ,btn1Text,btn2Text  }) => {
             
           {btn1Text||"Demander un Devis Gratuit"}
 
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to={btn2link||"/contact"}
             className="inline-flex items-center justify-center whitespace-nowrap transition-colors border border-white/40 bg-transparent h-11 text-base text-white hover:bg-white/10 font-semibold px-8 py-3 rounded-xl"
           >
            
           {btn2Text||"Nous Contacter"}
 
-          </a>
+          </Link>
         </div>
       </div>
     </section>

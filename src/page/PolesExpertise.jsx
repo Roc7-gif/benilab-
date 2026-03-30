@@ -1144,6 +1144,8 @@ export const PolesExpertisePage = () => {
         }
         btn1Text={"Démarrer un projet"}
         btn2Text={"Nous Contacter"}
+        btn1link={"/projets"}
+        btn2link={"/contact"}
       />
     </>
   );
